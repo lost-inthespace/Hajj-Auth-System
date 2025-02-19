@@ -6,6 +6,11 @@ The Hajj Authentication System is a comprehensive platform for managing and vali
 ## Core Components
 
 ### 1. Hardware Integration
+- **Raspberry Pi 5**
+  - 8Gb ram
+  - Active cooling with a fan
+  - power supply
+ 
 - **NFC Reader (PN532)**
   - Interfaces via SPI (spidev0.0)
   - Handles card reading/writing with encryption
@@ -14,12 +19,11 @@ The Hajj Authentication System is a comprehensive platform for managing and vali
 - **Fingerprint Sensor (Adafruit)**
   - Connects via UART (/dev/ttyAMA0)
   - Supports enrollment and verification
-  - Stores templates in numbered locations (1-120)
+  - Stores up to 124 fingerprints template
 
-- **Camera System**
-  - Uses YOLOv8 for person detection
-  - Performs real-time headcount verification
-  - Supports multiple frame captures for accuracy
+- **Camera**
+  - 8 MP resolution
+  - USB interface
 
 ### 2. Security Features
 - **Encryption System**
